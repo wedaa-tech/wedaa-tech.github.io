@@ -5,6 +5,5 @@ This is a repository for documentation of WeDAA - Well-Defined Application Archi
 Run the application on local machine using the following commands:
 
 ```
-cd wedaa
 npx docusaurus start
 ```
