@@ -8,7 +8,7 @@ const Hero = () => {
         {/* left side */}
         <div className="flexColStart hero-left">
           <div className="hero-title">
-          <span className="yellowText">WELL DEFINED ARCHITECTURE & APPLICATION</span>
+          <span className="yellowText">WELL DEFINED APPLICATION & ARCHITECTURE</span>
             <motion.h1
             initial={{ y: "2rem", opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
@@ -23,8 +23,8 @@ const Hero = () => {
             </motion.h1>
           </div>
           <div className="flexColStart secondaryText flexhero-des">
-            <span>WeDAA is where imagination finds its form.</span>
-            <span>As your ideas evolve into reality, let WeDAA sculpt the code while <br />you orchestrate the symphony of innovation.</span>
+            <span>Imagine building your application architecture using an intuitive visual design canvas.</span>
+            <span>Once you're done with your design, WeDAA seamlessly transforms it into complete full-stack source code.</span>
           </div>
           <button className="button">
               <a href="">Products</a>

@@ -1,6 +1,5 @@
 import React from 'react';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import BrowserOnly from '@docusaurus/BrowserOnly';
 import Footer from "@site/src/components/Footer";
 import GetStarted from "@site/src/components/GetStarted";
 import Header from "@site/src/components/Header";
