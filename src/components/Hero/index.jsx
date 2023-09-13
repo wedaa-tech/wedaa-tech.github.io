@@ -23,8 +23,8 @@ const Hero = () => {
             </motion.h1>
           </div>
           <div className="flexColStart secondaryText flexhero-des">
-            <span>Imagine building your application architecture using an intuitive visual design canvas.</span>
-            <span>Once you're done with your design, WeDAA seamlessly transforms it into complete full-stack source code.</span>
+            <span>Imagine building your application architecture <br />using an intuitive visual design canvas.</span>
+            <span>Once you're done with your design, WeDAA seamlessly transforms it <br />into complete full-stack source code.</span>
           </div>
           <button className="button">
               <a href="">Products</a>
