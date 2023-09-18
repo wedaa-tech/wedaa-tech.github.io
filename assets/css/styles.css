@@ -493,7 +493,7 @@ body.dark-theme {
   margin-bottom: .25rem;
 }
 
-.popular__price span {
+.popular__price__span {
   color: var(--second-color);
 }
 
@@ -754,7 +754,7 @@ body.dark-theme {
 
 .subscribe__title {
   font-size: var(--h2-font-size);
-  color: hsl(42, 83%, 53%);;
+  color: hsl(42, 83%, 53%);
   margin-bottom: 1rem;
 }
 
@@ -762,6 +762,10 @@ body.dark-theme {
   color: hsl(228, 90%, 92%);
   font-size: var(--small-font-size);
   margin-bottom: 2rem;
+}
+
+.subscribe__description a {
+  color: var(--second-color);
 }
 
 .subscribe__button {
