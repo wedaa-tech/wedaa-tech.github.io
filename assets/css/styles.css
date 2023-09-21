@@ -27,6 +27,7 @@
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1rem;
+  --smalle-font-size: 1.015rem;
   --normal-font-size: .938rem;
   --small-font-size: .813rem;
   --smaller-font-size: .75rem;
@@ -43,7 +44,7 @@
 /* Responsive typography */
 @media screen and (min-width: 1024px) {
   :root {
-    --biggest-font-size: 3.75rem;
+    --biggest-font-size: 5.50rem;
     --h1-font-size: 2.25rem;
     --h2-font-size: 1.5rem;
     --h3-font-size: 1.25rem;
@@ -62,7 +63,7 @@
 
 @media screen and (min-width: 1300px) {
   .video__content {
-      margin-top: 5rem; /* Adjust as needed */
+      margin-bottom: 4rem;
   }
 }
 
@@ -85,6 +86,13 @@ body {
   transition: .3s; /* For animation dark mode */
 }
 
+.outline-text {
+  font-size: 15px; /* Adjust the font size as needed */
+  font-weight: bold; /* Make it bold if desired */
+  color: hsl(228, 66%, 47%);
+  outline: 2px solid hsl(228, 66%, 47%);
+  padding: 5px;
+}
 
 h1, h2, h3 {
   color: var(--title-color);
@@ -259,6 +267,7 @@ body.dark-theme {
   display: inline-flex;
   align-items: center;
   column-gap: .25rem;
+  margin-right: 10px;
   font-weight: var(--font-medium);
   transition: .3s;
 }
@@ -340,8 +349,8 @@ body.dark-theme {
 }
 
 .home__container {
-  padding-top: 4rem;
-  row-gap: 3.5rem;
+  padding-top: 3rem;
+  row-gap: 2rem;
 }
 
 .home__title, 
@@ -362,7 +371,7 @@ body.dark-theme {
 
 .home__subtitle {
   color: var(--second-color);
-  margin-bottom: 2rem;
+  margin-bottom: 2.25rem;
   font-size: var(--small-font-size);
 }
 
@@ -866,6 +875,10 @@ body.dark-theme {
   color: var(--text-color);
 }
 
+.video__content {
+  margin-bottom: 2rem;
+}
+
 .footer__privacy {
   justify-content: center;
   column-gap: 1.25rem;
@@ -1012,7 +1025,7 @@ body.dark-theme {
 
 @media screen and (min-width: 767px) {
   .home__container {
-    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-columns: repeat(2, 1fr); */
     padding-top: 2rem;
   }
   .home__orbe {
@@ -1120,15 +1133,17 @@ body.dark-theme {
     padding-top: 5rem;
     column-gap: 2rem;
   }
-  .home__data {
-    padding-bottom: 7rem;
-  }
   .home__title {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  .home__subtitle {
+    text-align: center;
+    font-size: var(--smalle-font-size);
   }
   .home__description, 
   .home__search {
-    margin-bottom: 3rem;
+    text-align: center;
   }
   .home__value {
     column-gap: 3.5rem;
@@ -1160,9 +1175,12 @@ body.dark-theme {
     padding: 0 .25rem 0 .75rem;
   }
 
-  .value__container,
   .contact__container {
     align-items: flex-start;
+    column-gap: 5rem;
+  }
+
+  .value__container {
     column-gap: 5rem;
   }
   .value__orbe,
