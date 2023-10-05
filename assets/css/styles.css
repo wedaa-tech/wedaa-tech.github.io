@@ -784,7 +784,7 @@ body.dark-theme {
 }
 
 .subscribe__button:hover {
-  background-color: var(--first-color);
+  background-color: hsl(228, 66%, 47%);
 }
 
 /*=============== FOOTER ===============*/
@@ -1144,6 +1144,7 @@ body.dark-theme {
   .home__description, 
   .home__search {
     text-align: center;
+    line-height: 2rem;
   }
   .home__value {
     column-gap: 3.5rem;
@@ -1235,6 +1236,7 @@ body.dark-theme {
   .subscribe__description {
     font-size: var(--normal-font-size);
     padding: 0 8rem;
+    line-height: 2rem;
   }
   .subscribe__button {
     font-size: var(--normal-font-size);
