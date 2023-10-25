@@ -122,6 +122,7 @@ img, video {
   height: auto;
 }
 
+
 input,
 button {
   font-family: var(--body-font);
@@ -139,6 +140,11 @@ button {
 
 .change-theme:hover {
   color: var(--second-color);
+}
+
+.svg__img {
+  width: 300px;
+  justify-self: center;
 }
 
 /*========== Variables Dark theme ==========*/
@@ -1460,7 +1466,7 @@ body.dark-theme {
 /* For large devices */
 @media screen and (min-width: 1023px) {
   .section {
-    padding: 5.0rem  0 1rem;
+    padding: 9.0rem  0 1rem;
   }
   .section__title {
     font-size: 2.25rem;
@@ -1883,5 +1889,72 @@ body.dark-theme {
   }
   .questions__description{
     padding: 0 3.5rem 2.25rem 2.75rem;
+  }
+}
+
+.about__container {
+  gap: 2.5rem;
+}
+
+.about__data {
+  text-align: center;
+}
+
+.security__container {
+  gap: 2.5rem;
+}
+
+.security__data {
+  text-align: center;
+}
+
+@media screen and (min-width: 576px) {
+
+  .about__container,
+  .security__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about__container,
+  .security__container {
+    align-items: center;
+  }
+
+  .about__data,
+  .security__data {
+    text-align: initial;
+  }
+  .about__img{
+    order: -1;
+  }
+}
+
+/* For large devices */
+@media screen and (min-width: 968px) {
+  .about__container,
+  .security__container {
+    column-gap: 6rem;
+  }
+}
+
+
+/* For small devices */
+@media screen and (max-width: 360px) {
+  .svg__img {
+    width: 100%;
+  }
+}
+
+/* For medium devices */
+@media screen and (min-width: 576px) {
+  .svg__img {
+    width: 100%;
+  }
+}
+
+/* For large devices */
+@media screen and (min-width: 968px) {
+  .svg__img {
+    width: 470px;
   }
 }
