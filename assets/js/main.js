@@ -17,32 +17,32 @@ let swiperPopular = new Swiper(".popular__container", {
     },
 })
 
-const accordionItems = document.querySelectorAll('.value__accordion-item')
+// const accordionItems = document.querySelectorAll('.value__accordion-item')
 
-accordionItems.forEach((item) =>{
-    const accordionHeader = item.querySelector('.value__accordion-header')
+// accordionItems.forEach((item) =>{
+//     const accordionHeader = item.querySelector('.value__accordion-header')
 
-    accordionHeader.addEventListener('click', () =>{
-        const openItem = document.querySelector('.accordion-open')
-        toggleItem(item)
+//     accordionHeader.addEventListener('click', () =>{
+//         const openItem = document.querySelector('.accordion-open')
+//         toggleItem(item)
 
-        if(openItem && openItem!== item){
-            toggleItem(openItem)
-        }
-    })
-})
+//         if(openItem && openItem!== item){
+//             toggleItem(openItem)
+//         }
+//     })
+// })
 
-const toggleItem = (item) =>{
-    const accordionContent = item.querySelector('.value__accordion-content')
+// const toggleItem = (item) =>{
+//     const accordionContent = item.querySelector('.value__accordion-content')
 
-    if(item.classList.contains('accordion-open')){
-        accordionContent.removeAttribute('style')
-        item.classList.remove('accordion-open')
-    }else{
-        accordionContent.style.height = accordionContent.scrollHeight + 'px'
-        item.classList.add('accordion-open')
-    }
-}
+//     if(item.classList.contains('accordion-open')){
+//         accordionContent.removeAttribute('style')
+//         item.classList.remove('accordion-open')
+//     }else{
+//         accordionContent.style.height = accordionContent.scrollHeight + 'px'
+//         item.classList.add('accordion-open')
+//     }
+// }
 
 const sections = document.querySelectorAll('section[id]')
 
@@ -76,12 +76,12 @@ const iconTheme = 'bx-sun'
 const selectedTheme = localStorage.getItem('selected-theme')
 const selectedIcon = localStorage.getItem('selected-icon')
 
-const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
-const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'bx bx-sun' : 'bx bx-moon'
+const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'light' : 'dark'
+const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'bx bx-moon' : 'bx bx-sun'
 
 if (selectedTheme) {
   document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
-  themeButton.classList[selectedIcon === 'bx bx-moon' ? 'add' : 'remove'](iconTheme)
+  themeButton.classList[selectedIcon === 'bx bx-sun' ? 'add' : 'remove'](iconTheme)
 }
 
 themeButton.addEventListener('click', () => {
@@ -106,3 +106,34 @@ sr.reveal(`.home__images`, {delay: 800, origin: 'bottom'})
 sr.reveal(`.logos__img`, {interval: 100})
 sr.reveal(`.value__images, .contact__content`, {origin: 'left'})
 sr.reveal(`.value__content, .contact__images`, {origin: 'right'})
+sr.reveal(`.model__tooltip`, {origin: 'right'})
+
+
+const accordionItems = document.querySelectorAll('.questions__item')
+
+accordionItems.forEach((item) =>{
+    const accordionHeader = item.querySelector('.questions__header')
+
+    accordionHeader.addEventListener('click', () =>{
+        const openItem = document.querySelector('.accordion-open')
+
+        toggleItem(item)
+
+        if(openItem && openItem!== item){
+            toggleItem(openItem)
+        }
+    })
+})
+
+const toggleItem = (item) =>{
+    const accordionContent = item.querySelector('.questions__content')
+
+    if(item.classList.contains('accordion-open')){
+        accordionContent.removeAttribute('style')
+        item.classList.remove('accordion-open')
+    }else{
+        accordionContent.style.height = accordionContent.scrollHeight + 'px'
+        item.classList.add('accordion-open')
+    }
+
+}

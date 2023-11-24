@@ -22,6 +22,8 @@
         
         <link rel="shortcut icon" href="assets/img/3.png" type="image/x-icon">
         <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
         <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
         <link rel="stylesheet" href="assets/css/styles.css">
 
@@ -35,6 +37,7 @@
                 <a href="#" class="nav__logo">
                     WeDAA 
                 </a>
+                <!-- <p class="outline-text">Beta</p> -->
 
                 <div class="nav__menu">
                     <ul class="nav__list">
@@ -51,8 +54,8 @@
                             </a>
                         </li>
                         <li class="nav__item">
-                            <a href="https://www.wedaa.tech/docs" target="_blank" class="nav__link">
-                                <span>Blogs</span>
+                            <a href="https://www.wedaa.tech/docs/blog" target="_blank" class="nav__link">
+                                <span>Blog</span>
                                 <i class='bx bx-book-open'></i>
                             </a>
                         </li>
@@ -83,25 +86,42 @@
                             <b> <i class='bx bxs-zap'></i> WELL-DEFINED APPLICATION ARCHITECTURE</b>
                         </p>
 
+                            
+                      <!-- <div class="model__tooltip model__tooltip-11">
+                        <img src="assets/img/tooltip-right.svg" alt="" class="models__tooltip-img">
+                        <span class="models__tooltip-text">Rapid Prototyping</span>
+                     </div>
+   
+                     <div class="model__tooltip model__tooltip-21">
+                        <img src="assets/img/tooltip-right.svg" alt="" class="models__tooltip-img">
+                        <span class="models__tooltip-text">Comprehensive Architecture</span>
+                     </div>
+   
+                     <div class="model__tooltip model__tooltip-31">
+                        <img src="assets/img/tooltip-right.svg" alt="" class="models__tooltip-img">
+                        <span class="models__tooltip-text">Seamless Cloud Deployments </br> & No Vendor Lock-in</span>
+                     </div> -->
+
 
                         <h1 class="home__title">
-                            Introducing <br>W<span class="popular__price__span">e</span>DAA
+                            M<span class="popular__price__span">e</span><span class="popular__price__span">e</span>t W<span class="popular__price__span">e</span>DAA
                         </h1>
+                        <p class="home__subtitle">
+                            From Low-Code, No-Code to Generate and Own-Code with WeDAA.
+                        </p>
                         <p class="home__description">
-                            The pioneering full-stack application prototyping platform, built with cloud-first architecture at its core.</br> 
-                            Embrace WeDAA as your steadfast companion for effortlessly crafting application prototypes, based on comprehensive architecture.</br>
-                            Auto-deploy your resulting application on preferred cloud infrastructure.
+                            The pioneering full-stack app prototyping platform with cloud-first architecture.<br> Easily craft and auto-deploy prototypes on your preferred cloud infrastructure.
                         </p>
                     </div>
                     <div class="home__images">
                         <div class="video__content">
-                            <img src="assets/video/myproject.gif">
+                            <video src="assets/video/IntroWedaa.mp4" controls></video>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section class="value section" id="value">
+            <!-- <section class="value section" id="value">
                 <div class="value__container container grid">
                     <div class="value__images">
                         <div class="gif__content" id="gif">
@@ -126,9 +146,6 @@
                                     <h3 class="value__accordion-title">
                                         Rapid Prototyping
                                     </h3>
-                                    <div class="value__accordion-arrow">
-                                        <i class='bx bxs-down-arrow'></i>
-                                    </div>
                                 </header>
 
                                 <div class="value__accordion-content">
@@ -145,9 +162,6 @@
                                     <h3 class="value__accordion-title">
                                         Comprehensive Architecture
                                     </h3>
-                                    <div class="value__accordion-arrow">
-                                        <i class='bx bxs-down-arrow'></i>
-                                    </div>
                                 </header>
 
                                 <div class="value__accordion-content">
@@ -183,9 +197,6 @@
                                     <h3 class="value__accordion-title">
                                         No Vendor Lock-in
                                     </h3>
-                                    <div class="value__accordion-arrow">
-                                        <i class='bx bxs-down-arrow'></i>
-                                    </div>
                                 </header>
 
                                 <div class="value__accordion-content">
@@ -198,11 +209,255 @@
                         </div>
                     </div>
                 </div>
+            </section> -->
+
+            <section class="about section container" id="about">
+                <div class="about__container grid">
+                    <div class="about__data">
+                        <h2 class="section__title-center">Rapid Prototyping</h2>
+                        <p class="about__description">Accelerate your development cycle by rapidly converting design and architecture diagrams into fully functional prototypes in mere minutes. <br><br>
+                            Advanced prototyping and code generation significantly reduce the laborious process of dealing with basic application setup and integrations, allowing you to redirect more of your energy toward innovation, problem-solving, and the development of robust business cases.
+                        </p>
+                    </div>
+                    <img src="assets/img/rapid-prototyping.jpeg" alt="" class="about__img">
+                </div>
             </section>
 
+            <section class="security section container">
+                <div class="security__container grid">
+                    <div class="security__data">
+                        <h2 class="section__title-center">Comprehensive Architecture</h2>
+                        <p class="security__description">Our intelligent full-stack templating system ensures that you build applications with top-notch architectural practices right from the outset. <br><br>
+                            Say goodbye to uncertainty and welcome the confidence of a solid software foundation.
+                        </p>
+                    </div>
+                    <img src="assets/img/comprehensive-architecture.jpeg" alt="" class="">
+                </div>
+            </section>
 
-            <!--==================== POPULAR ====================-->
-            <section class="section" id="popular">
+            <section class="about section container" id="about">
+                <div class="about__container grid">
+                    <div class="about__data">
+                        <h2 class="section__title-center">Seamless Cloud Deployments</h2>
+                        <p class="about__description">WeDAA effortlessly deploys generated applications to cloud infrastructure with minimal manual intervention or complexity. Also empowers these applications through automation, orchestration, Infrastructure as Code (IaC), Continuous Integration/Continuous Deployment (CI/CD), containerization, serverless computing, managed services, monitoring, scaling, and security. <br><br>
+                            The WeDAA platform is designed with the goal of minimizing manual effort, enhancing efficiency, and ensuring the reliability and consistency of deployments in cloud environments.
+                        </p>
+                    </div>
+                    <img src="assets/img/cloud-deployments.jpeg" alt="" class="about__img">
+                </div>
+            </section>
+
+            <section class="security section container">
+                <div class="security__container grid">
+                    <div class="security__data">
+                        <h2 class="section__title-center">No Vendor Lock-in</h2>
+                        <p class="security__description"><b>No Vendor Lock-in</b> is a fundamental principle of WeDAA. it aims to prevent organizations from becoming overly reliant on a single vendor's products or services, enabling them to adapt to changing needs and take advantage of new technologies without facing significant barriers to migration or integration. <br><br>
+                            We promote freedom, flexibility, and interoperability in technology choices.
+                        </p>
+                    </div>
+                    <img src="assets/img/no-vendor-lock-in.jpeg" alt="" class="">
+                </div>
+            </section>
+            <!-- <section class="section" id="model">
+                <div class="container">
+                <div class="section__title-button">
+                    <h2 class="section__title"><span>Why Choose WeDAA?</span></h2>
+                </div>
+    
+                <div class="model__container container grid">
+                   <div class="model__content">
+                      <img src="assets/img/Blue Corporate Development Process Steps Graph (1).png" alt="image" class="model__img">
+    
+                      <div class="model__tooltip model__tooltip-1">
+                         <img src="assets/img/tooltip-right.svg" alt="" class="model__tooltip-img">
+                         <span class="model__tooltip-text">Design & Architecture</span>
+                      </div>
+    
+                      <div class="model__tooltip model__tooltip-2">
+                         <img src="assets/img/tooltip-right-2.svg" alt="" class="model__tooltip-img">
+                         <span class="model__tooltip-text">Development</span>
+                      </div>
+    
+                      <div class="model__tooltip model__tooltip-3">
+                         <img src="assets/img/tooltip-right-2.svg" alt="" class="model__tooltip-img">
+                         <span class="model__tooltip-text">Deployment</span>
+                      </div>
+    
+                      <div class="model__tooltip model__tooltip-4">
+                         <img src="assets/img/tooltip-right-2.svg" alt="" class="model__tooltip-img">
+                         <span class="model__tooltip-text">Discovery</span>
+                      </div>
+                      <div class="model__tooltip model__tooltip-5">
+                        <img src="assets/img/tooltip-right.svg" alt="" class="model__tooltip-img">
+                        <span class="model__tooltip-text">Prototyping</span>
+                     </div>
+                     <div class="model__tooltip model__tooltip-6">
+                        <img src="assets/img/tooltip-right.svg" alt="" class="model__tooltip-img">
+                        <span class="model__tooltip-text">Testing</span>
+                     </div>
+                     <div class="model__tooltip model__tooltip-7">
+                        <img src="assets/img/tooltip-right-2.svg" alt="" class="model__tooltip-img">
+                        <span class="model__tooltip-text">Maintenance</span>
+                     </div>
+                   </div>
+                </div> -->
+                <!-- <div class="steps__bg">
+                    <h2 class="section__title-center steps__title">
+                        Steps to start your <br> Work
+                    </h2>
+
+                    <div class="steps__container grid">
+                        <div class="steps__card">
+                            <div class="steps__card-number">01</div>
+                            <h3 class="steps__card-title">Title</h3>
+                            <p class="steps__card-description">
+                                Description.
+                            </p>
+                        </div>
+
+                        <div class="steps__card">
+                            <div class="steps__card-number">02</div>
+                            <h3 class="steps__card-title">Title</h3>
+                            <p class="steps__card-description">
+                                Description.
+                            </p>
+                        </div>
+
+                        <div class="steps__card">
+                            <div class="steps__card-number">03</div>
+                            <h3 class="steps__card-title">Title</h3>
+                            <p class="steps__card-description">
+                                Description.
+                            </p>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            </section>
+
+            <!-- <section class="section" id="refarch">
+
+            <div class="container">
+                <div class="section__title-button">
+                    <h2 class="section__title"><span>Samples</span></h2>
+                    <button class="button">See All</button>
+                </div>
+                <div class="card__container">
+                   <article class="card__article">
+                      <img src="assets/img/1.jpg" alt="image" class="card__img">
+       
+                      <div class="card__data">
+                         <span class="card__description">Description</span>
+                         <h2 class="card__title">Title</h2>
+                         <a href="#" class="card__button">Try</a>
+                      </div>
+                   </article>
+       
+                   <article class="card__article">
+                      <img src="assets/img/1.jpg" alt="image" class="card__img">
+       
+                      <div class="card__data">
+                        <span class="card__description">Description</span>
+                        <h2 class="card__title">Title</h2>
+                        <a href="#" class="card__button">Try</a>
+                      </div>
+                   </article>
+       
+                   <article class="card__article">
+                      <img src="assets/img/1.jpg" alt="image" class="card__img">
+       
+                      <div class="card__data">
+                        <span class="card__description">Description</span>
+                        <h2 class="card__title">Title</h2>
+                        <a href="#" class="card__button">Try</a>
+                      </div>
+                   </article>
+                </div>
+             </div>
+            </section> -->
+
+            <!-- <section class="questions section" id="faqs">
+                <div class="container">
+                <div class="section__title-button">
+                    <h2 class="section__title"><span>FAQs</span></h2>
+                </div>
+
+                <div class="questions__container container grid">
+                    <div class="questions__group">
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="ri-add-line questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    My flowers are falling off or dying?
+                                </h3>
+                            </header>
+
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                    Plants are easy way to add color energy and transform your 
+                                    space but which planet is for you. Choosing the right plant.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="ri-add-line questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    What causes leaves to become pale?
+                                </h3>
+                            </header>
+
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                    Plants are easy way to add color energy and transform your 
+                                    space but which planet is for you. Choosing the right plant.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="questions__group">
+
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="ri-add-line questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    What causes brown crispy leaves?
+                                </h3>
+                            </header>
+
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                    Plants are easy way to add color energy and transform your 
+                                    space but which planet is for you. Choosing the right plant.
+                                </p>
+                            </div>
+                        </div>
+
+                    <div class="questions__group">
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="ri-add-line questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    How do i choose a plant?
+                                </h3>
+                            </header>
+
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                    Plants are easy way to add color energy and transform your 
+                                    space but which planet is for you. Choosing the right plant.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            </section> -->
+
+            <!-- <section class="section" id="popular">
                 <div class="container">
                     <div class="section__title-button">
                         <h2 class="section__title"><span>Blogs</span></h2>
@@ -300,21 +555,22 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
 
 
             <!--==================== SUBSCRIBE ====================-->
+
             <section class="subscribe section" id="feedback">
                 <div class="subscribe__container container">
                     <h1 class="subscribe__title">
                         Your Voice Matters!
                     </h1>
                     <p class="subscribe__description">
-                        Share your insights & Join us in shaping the future of WeDAA.
+                        Join the conversation on our GitHub organization and be part of the journey to enhance WeDAA's future.
                     </p>
-                    <p class="subscribe__description">
-                        Start a discussion on our github organisation >> <a href="https://github.com/orgs/wedaa-tech/discussions" target="_blank">WeDAA Tech</a>
-                    </p>
+                    <a href="https://github.com/orgs/wedaa-tech/discussions" target="_blank" class="button subscribe__button">
+                            Let's Go
+                    </a>
                 </div>
             </section>
         </main>
