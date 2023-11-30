@@ -1951,3 +1951,26 @@ body.dark-theme {
     width: 470px;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .best-viewed-desktop {
+    background: linear-gradient(101deg, hsl(42, 83%, 53%), hsl(42, 83%, 47%));
+    color: #fff;
+    padding: 14px 28px;
+    border-radius: 0.5rem;
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    box-shadow: 0 4px 8px hsla(42, 83%, 53%, .25);
+    transition: .3s;
+    text-decoration: none;
+    margin: 0 auto; /* Center the element horizontally */
+    margin-bottom: 2.25rem; /* Add margin-bottom to create space */
+    display: inline-block; /* Maintain block-level appearance */
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .best-viewed-desktop {
+      display: none; /* Hide the message on desktop */
+  }
+}
